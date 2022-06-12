@@ -120,7 +120,7 @@ export const globalSkills = [
     skillColor: "skills-section__image--blue",
     image: "./img/typescript.png",
     alt: "ts-skill",
-    text: "Typescripit"
+    text: "Typescript"
   },
   {
     id: 10, 
