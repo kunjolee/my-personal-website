@@ -7,6 +7,8 @@ I made this website using vanilla JS, HTML, and CSS.
 - Form Submit library
 - Intersection Observer
 
+Link: https://kunjolee.netlify.app/
+
 ## Desktop Version
 
 ![image1](img/desk1.jpg)
