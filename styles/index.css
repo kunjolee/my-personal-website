@@ -597,7 +597,7 @@ img {
 .main-header__skill:nth-child(3) {
   width: 70px;
   left: 30%;
-  bottom: 10%;
+  bottom: 40%;  
 }
 
 .main-header__skill img {
@@ -613,9 +613,10 @@ img {
   .main-header__skill:nth-child(2) {
     top: 0;
   }
-
+  
   .main-header__skill:nth-child(3) {
-    bottom: 50%;
+    bottom: 50%;    
+    
   }
 
 }
@@ -670,9 +671,9 @@ img {
 /* ABOUT */
 
 .about-section {
-  margin-top: 7rem;
+  margin-top: 3rem;
   background-color: var(--third-color);
-  padding-top: 6rem;
+  padding-top: 4rem;
   position: relative;    
 }
 
