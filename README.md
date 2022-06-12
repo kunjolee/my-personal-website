@@ -4,7 +4,7 @@ This is my portfolio, where you can find some of my projects, get to know me, an
 I made this website using vanilla JS, HTML, and CSS.
 - AJAX
 - BEM CSS methodology
-- Form Submit library
+- Form Submit api
 - Intersection Observer
 
 Link: https://kunjolee.netlify.app/
