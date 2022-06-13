@@ -3,6 +3,7 @@
 This is my portfolio, where you can find some of my projects, get to know me, and contact me.
 I made this website using vanilla JS, HTML, and CSS.
 - AJAX
+- DOM
 - BEM CSS methodology
 - Form Submit api
 - Intersection Observer
