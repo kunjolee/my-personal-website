@@ -10,7 +10,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "Music Store",
-    text: "e-commerce of instruments using react.js, stripe js, e-commerce js library, redux, hooks and CSS"
+    text: "e-commerce of instruments using React JS, Stripe JS, e-commerce JS library, Redux, Hooks and CSS"
   },  
   {
     id: 2,
@@ -21,7 +21,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "ShareMe",
-    text: "Web Social Media Application, using React JS, Hooks, Tailwind CSS and Sanity studio"
+    text: "Web social media application, using React JS, Hooks, Tailwind CSS and Sanity studio"
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export const globalProjects = [
     category: "mern",
     categoryText: "MERN",
     title: "Login Crud Auth",
-    text: "Full Stack application to make a Login & CRUD"
+    text: "Full stack application to make a Login & CRUD"
   },
   {
     id: 4,
