@@ -123,7 +123,7 @@ const getSkills = (skills = []) => {
 
 doc.addEventListener("DOMContentLoaded" , () => {
   getAllCategories(globalProjects);
-  getSkills(globalSkills);
+  getSkills(globalSkills);  
 })
 
 doc.addEventListener("click" , (e) => {
@@ -176,16 +176,16 @@ form.addEventListener("keyup" , (e) => {
 })
 
 
-const formResponseMethod = (responseMessage, message, loader ) => {
+const formResponseMethod = (responseMessage, message, loader ) => {      
+
+  loader.classList.remove("contact-section__response--active");
+  responseMessage.textContent =  message;        
+  responseMessage.classList.add("contact-section__response--active");
   
-   loader.classList.remove("contact-section__response--active");
-    responseMessage.textContent =  message;        
-    responseMessage.classList.add("contact-section__response--active");
-      
-    setTimeout(() => {                
-      responseMessage.classList.remove("contact-section__response--active");
-      form.reset();
-    }, 3500);
+  setTimeout(() => {                
+    responseMessage.classList.remove("contact-section__response--active");
+    form.reset();
+  }, 3500);  
 }
 
 const sendSubmit = async (form) => {

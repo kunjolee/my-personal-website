@@ -9,12 +9,14 @@
   <meta name="title" content="Kunjo Lee">
   <meta name="description"
   content="Hi! I am a frontend developer with a passion for building beautiful and functional web applications.">
-  
+  <meta name="author" content="Kunjo Lee">
+  <meta name="keywords" content="Kunjo Lee, Portfolio, Personal Website">
+
   <link rel="canonical" href="https://kunjolee.netlify.app/">    
   <link rel="icon" href="./img/KL.png" />
   <link rel="apple-touch-icon" href="./img/KL.png">
   <meta name="theme-color" content="#09dbaa">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kunjolee.netlify.app/">
@@ -99,7 +101,7 @@
   
   <!-- Header -->
   <header class="main-header" data-scroll-spy id="header">
-    <img src="./img/bgIMG.png" alt="background" class="main-header__background">
+    <!-- <img src="./img/bgIMG.png" alt="background" class="main-header__background"> -->
     <section class="main-header__section">
       
       <div class="main-header__container">
@@ -142,8 +144,7 @@
   
 
   <!-- About section -->
-  <!-- “Everything is possible for one who believes.”
-    “All things are possible for the one who believes.” -->
+  <!-- “All things are <span>possible</span> for the one who <span>believes</span>.” -->
     
     <section id="about" class="about-section" data-scroll-spy>    
       <div class="container">      
@@ -183,31 +184,11 @@
         </article>        
       </section>        
     </div>
-    <aside class="main-aside">
-      <div class="main-aside__item">
-        <a href="https://twitter.com/kunjolee" target="_blank" rel="noreferrer" >
-          <img src="./img/twitter.png" alt="social-twitter">
-        </a>
-      </div>
-      <div class="main-aside__item">
-        <a href="https://www.linkedin.com/in/kunjo-lee/" target="_blank" rel="noreferrer" >
-          <img src="./img/linkedin.png" alt="social-linkedin">
-        </a>
-      </div>
-      <div class="main-aside__item">
-        <a href="https://github.com/Kunjolee" target="_blank" rel="noreferrer" >
-          <img src="./img/github.png" alt="social-github">
-        </a>
-      </div>
-    </aside>
-    <footer class="main-footer">
-      <p>&copy2022 Kunjo</p>
-      <p>All rights reserved</p>
-    </footer>
+
   </section>
 
   <!-- fixed navbar -->
-  <nav class="fixed-navbar" id="fixed-navbar">
+<nav class="fixed-navbar" id="fixed-navbar">
     <a href="#home"  data-scroll-id="header" class="fixed-navbar__link"></a>
     <a href="#about" data-scroll-id="about" class="fixed-navbar__link"></a>
     <a href="#projects" data-scroll-id="projects-scroll" class="fixed-navbar__link"></a>
@@ -333,13 +314,13 @@
         </a>
       </div>
     </aside>
-    <footer class="main-footer">
+    <footer class="main-footer" >
       <p>&copy2022 Kunjo</p>
       <p>All rights reserved</p>
     </footer>
   </section>   
-  <script type="module" src="./js/script.min.js"></script>
   <script src="./js/hamburger.min.js"></script>
+  <script type="module" src="./js/script.min.js"></script>
 </body>
 </html>
 
