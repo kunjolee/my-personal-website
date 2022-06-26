@@ -314,12 +314,17 @@ img {
 
 /* HEADER */
 
+
+.main-header {
+  padding-top: 4rem;
+}
+
 .main-header__section {
   display: block;
   width: 100%;  
   background-image: url(../img/bgIMG.png);  
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;    
 }
 
 @media screen and (min-width: 1024px) {
@@ -607,12 +612,12 @@ img {
   }
 
   .main-header__skill:nth-child(1) {
-    top: 20%;
+    top: 5%;
     left: 0;
   }
 
   .main-header__skill:nth-child(2) {
-    top: 45%;
+    top: 35%;
     left: 10%;
   }
 
