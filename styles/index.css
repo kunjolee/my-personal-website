@@ -343,7 +343,7 @@ img {
 
 @media screen and (min-width: 1024px) {
   .main-header__container {
-    display: flex;
+    display: flex;    
     width: 90%;
     height: 80vh;        
   }
@@ -537,9 +537,9 @@ img {
     position: relative;
   }
 
-  .main-header__profile img:first-child {
-    top: 10%;
-    position: absolute;    
+  .main-header__profile img:first-child {        
+    height: 500px;
+    width: 100%;
   }
 
   .main-header__profile img:nth-child(2) {    
@@ -548,16 +548,12 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-
-  .main-header__profile img:first-child {
-    position: absolute;
-    top: 7%;
-    width: 550px;
-  }
-
-  .main-header__profile img:nth-child(2) {
-    bottom: 7%;
+  .main-header__profile img:first-child {            
     height: 550px;
+  }
+  
+  .main-header__profile img:nth-child(2) {            
+    height: 550px;        
   }
 }
 
