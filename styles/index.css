@@ -315,8 +315,10 @@ img {
 /* HEADER */
 
 
-.main-header {
-  padding-top: 4rem;
+@media screen and (min-width: 1024px) {
+  .main-header{    
+    padding-top: 4rem;
+  }
 }
 
 .main-header__section {
