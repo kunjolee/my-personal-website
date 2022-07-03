@@ -1,8 +1,7 @@
 
 export const globalProjects = [
 
-  { 
-    id: 1, 
+  {      
     image: "./img/MusicStore.jpg",
     alt: "music-store",
     url: "https://music-store-app.netlify.app/",
@@ -10,10 +9,9 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "Music Store",
-    text: "e-commerce of instruments using React JS, Stripe JS, e-commerce JS library, Redux, Hooks and CSS"
+    text: "e-commerce application for instruments. React.js, Stripe.js, Redux, and CSS"
   },  
-  {
-    id: 2,
+  {    
     image: "./img/sharemeApp.jpg",
     alt: "shareme-app",
     url: "https://shareme-post.netlify.app/",
@@ -21,10 +19,19 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "ShareMe",
-    text: "Web social media application, using React JS, Hooks, Tailwind CSS and Sanity studio"
+    text: "Web social media application. React.js, Tailwind CSS and Sanity studio"
   },
-  {
-    id: 3,
+  {    
+    image: "./img/pokemonStatic.jpg",
+    alt: "pokemon-static",
+    url: "https://pokemon-list-static.vercel.app/",
+    github: "https://github.com/Kunjolee/pokemon-static",
+    category: "webApp",
+    categoryText: "Web App",
+    title: "Pokemon App",
+    text: "Pokemon App. Typescript, Next.js and NextUI"
+  },
+  {    
     image: "./img/crudLogin.jpeg",
     alt: "crud-login-auth",
     url: "https://crud-login-auth.netlify.app/",
@@ -34,8 +41,7 @@ export const globalProjects = [
     title: "Login Crud Auth",
     text: "Full stack application to make a Login & CRUD"
   },
-  {
-    id: 4,
+  {    
     image: "./img/gpt3Page.jpeg",
     alt: "gpt3-app",
     url: "https://gpt3-modern-app.netlify.app/",
@@ -43,10 +49,9 @@ export const globalProjects = [
     category: "ui_ux",
     categoryText: "UI/UX",
     title: "GPT3 WEB",
-    text: "Modern responsive design using React JS, CSS and BEM methodology"
+    text: "Modern responsive design. React.js, CSS and BEM methodology"
   },
-  {
-    id: 5,
+  {    
     image: "./img/movieCard.jpg",
     alt: "movie-card",
     url: "https://kunjolee.github.io/MovieCard/",
@@ -54,7 +59,7 @@ export const globalProjects = [
     category: "ui_ux",
     categoryText: "UI/UX",
     title: "Movie Card",
-    text: "Responsive modern layout about movies using HTML & CSS"
+    text: "Responsive modern layout about movies. HTML & CSS"
   },
 ]
 

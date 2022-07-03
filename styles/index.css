@@ -470,6 +470,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .main-header__profile img:first-child {  
@@ -497,7 +498,8 @@ img {
   transform: translateX(-50%);
   animation-name: opacityAnimation;
   animation-duration: 1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;  
+  height: 270px;
 }
 
 @keyframes opacityAnimation {
@@ -517,6 +519,10 @@ img {
   .main-header__profile img:first-child {
     object-fit: cover;
     height: auto;
+  }    
+
+  .main-header__profile img:nth-child(2) {
+    height: 310px;
   }
 }
 
@@ -528,6 +534,10 @@ img {
   .main-header__profile img:first-child {
     width: 450px;
     object-fit: initial;
+  }
+
+  .main-header__profile img:nth-child(2) {
+    height: 400px;
   }
 }
 
@@ -550,7 +560,7 @@ img {
   }
 
   .main-header__profile img:nth-child(2) {    
-    height: 500px;
+    height: 480px;
   }
 }
 
