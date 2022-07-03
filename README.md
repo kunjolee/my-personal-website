@@ -2,6 +2,7 @@
 
 This is my portfolio, where you can find some of my projects, get to know me, and contact me.
 I made this website using vanilla JS, HTML, and CSS.
+
 - AJAX
 - DOM
 - BEM CSS methodology
@@ -12,7 +13,7 @@ Link: https://kunjolee.netlify.app/
 
 ## Desktop Version
 
-![image1](img/desk1.jpg)
+![image1](img/desk.jpg)
 ![image2](img/desk2.jpg)
 ![image3](img/desk3.jpg)
 
