@@ -18,7 +18,7 @@
   --purple-color: rgba(118, 74, 188, .3);  
   --green-color: rgba(60,135, 58, .3);  
   --light-green-color: rgba(65, 252, 170, .3);  
-  --black-transparent-color: rgba(28, 25, 25, .3);  
+  --black-transparent-color: rgba(28, 25, 25, .3);    
 
 
   --shadow: 0 0 20px rgba(0, 0, 0, .1);
@@ -335,11 +335,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .main-header__section {
-    height: 90vh;      
-  }
-}
 
 .main-header__container {
   width: 90%;
@@ -477,7 +472,7 @@ img {
   object-fit: cover;
   animation-name: circleAnimation;
   animation-duration: 1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;  
 }
 
 
@@ -656,8 +651,7 @@ img {
 
 /* ABOUT */
 
-.about-section {
-  background-color: var(--third-color);
+.about-section {  
   padding-top: 4rem;
   position: relative;    
 }
@@ -671,12 +665,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .about-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+@media screen and (min-width: 1200px) {  
 }
 
 .about-section__title-container {
@@ -722,15 +711,16 @@ img {
 
 .about-section__container {
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-bottom: 1rem;    
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  gap: 1rem;  
-  padding-bottom: 100px;  
+  gap: 3rem;  
 }
 
 .about-section__article {
-  transition: transform .3s ease-in-out;  
+  transition: transform .5s ease;  
+  flex: 0 0 100%;
 }
 
 .about-section__article:hover {   
@@ -762,23 +752,15 @@ img {
 
 
 @media screen and (min-width: 481px) {
-  .about-section__container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
-    gap: 2.5rem;
-  }
-
-  .about-section__article img {
-    height: 287px;   
+  
+  .about-section__article {
+    flex: 0 0 80%;    
   }
 }
 
 @media screen and (min-width: 769px) {
-  .about-section__container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-  }
-
-  .about-section__article img {
-    height: 192px;
+  .about-section__article {
+    flex: 0 0 45%;
   }
 }
 
@@ -786,13 +768,24 @@ img {
   .about-section__container {
     margin-top: 5rem;    
   }
+
+  .about-section__article {
+    flex: 0 0 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .about-section__article {
+    flex: 0 0 20%;
+  }
 }
 
 
 /* PROJECTS */
 
 .projects-section {
-  margin-top: 4rem;    
+  padding-top: 4rem;    
   position: relative;          
 }
 
@@ -803,13 +796,6 @@ img {
     visibility: hidden;
     transition: var(--section-transition);    
   }
-}
-
-@media screen and (min-width: 769px) {
-  /* This will aply when i click to see my categories */
-  .projects-section--category { 
-    height: 92vh;    
-  }  
 }
 
 
@@ -884,20 +870,24 @@ img {
 
 
 .projects-section__container {
-  display: grid;  
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;  
+  flex-flow: row wrap;  
   justify-content: center;  
-  gap: 1rem;    
-  padding-bottom: 100px;
-  
+  gap: 2.5rem;      
 }
 
 .projects-section__article {
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 1rem;
-  background-color: var(--white-color);
+  background-color: var(--white-color);  
   box-shadow: var(--shadow);
+  flex: 0 0 100%;
+}
 
+.projects-section__article-container {
+  display: flex;  
+  flex-direction: column;
+  gap: 1rem;
 }
 
 
@@ -936,6 +926,8 @@ img {
 
 .projects-section__image {
   position: relative;  
+  flex: 1;
+  height: 100%;
 }
 
 .projects-section__image:hover .projects-section__view {
@@ -956,6 +948,7 @@ img {
   position: absolute;
   left: 50%;
   bottom: 0;  
+  font-size: .9rem;
   transform: translateX(-50%);
 }
 
@@ -967,47 +960,79 @@ img {
 
 .projects-section__information {  
   text-align: center;
+  flex: 1;
 }
 
 .projects-section__information h3 {
-  margin: 1.2rem 0;
+  margin: 0 0 1.2rem;
   text-transform: capitalize;
 }
 
 .projects-section__information p {  
   color: var(--gray-color);
+  text-align: justify;
+}
+
+.projects-section__technologies {
+  margin-top: 1rem;
   text-align: left;
 }
 
-@media screen and (min-width: 481px) {
-  .projects-section__container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
-    gap: 2rem;
-  }
+.projects-section__technologies li {
+  color: var(--gray-color);
+}
 
+@media screen and (min-width: 481px) {
   .projects-section__image  {
     height: 100%;
   }
 }
 
-@media screen and (min-width: 769px) {
-  .projects-section__container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+@media screen and (min-width: 576px) {  
+  .projects-section__article {
+    flex: 0 0 70%;
   }  
+}
+
+@media screen and (min-width: 769px) {  
+.projects-section__article-container {
+  flex-direction: row;
+  
+}
+ .projects-section__article {   
+   flex: 0 0 70%;
+ }
+
+ .projects-section__image-item {
+   height: 380px;   
+ }
 }
 
 @media screen and (min-width: 1024px) {
   .projects-section__container {
     padding-bottom: 100px;
+  }    
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-section__container {
+    padding-bottom: 100px;
   }  
+
+  .projects-section__article {
+    flex: 0 0 45%;
+  }  
+
+  .projects-section__image-item {
+    height: 400px;
+  }
 }
 
 /* Skills */
 
 
 .skills-section {
-  padding: 4rem 0 0;  
-  background-color: var(--third-color);  
+  padding: 4rem 0 0;    
   position: relative;    
 }
 
@@ -1021,14 +1046,6 @@ img {
 }
 
 
-@media screen and (min-width: 1200px) {
-  .skills-section {
-    height: 100vh;    
-    display: flex;
-    align-items: center;
-    padding: 7rem 0 0;
-  }
-}
 
 .skills-section__title-container {
   display: flex;
@@ -1072,15 +1089,15 @@ img {
 }
 
 .skills-section__content {  
-  margin: 1rem 0 3rem;   
-  padding-bottom: 6rem;  
+  margin: 3rem 0 3rem;     
 }
 
 
-.skills-section__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 130px));  
+.skills-section__container {  
+  display: flex;
+  flex-flow: row wrap;  
   justify-content: center;
+
   gap: 2rem;
 
   /* This is because i don't have experience */
@@ -1092,7 +1109,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1rem;  
+  transition: transform .5s ease;
+}
+
+.skills-section__article:hover {
+  transform: scale(1.1);
 }
 
 .skills-section__image {
@@ -1141,6 +1163,10 @@ img {
   background-color: var(--black-transparent-color);
 }
 
+.skills-section__image--white { 
+  background-color: var(--black-transparent-color);  
+}
+
 .skills-section__text {
   color: var(--gray-color);
 }
@@ -1148,9 +1174,9 @@ img {
 
 /* Form Contact */
 
-.contact-section {
-  margin-top: 4rem;
+.contact-section {  
   position: relative; 
+  padding-top: 4rem;
 }
 
 
@@ -1164,8 +1190,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .contact-section {
-    height: 90vh;
+  .contact-section {    
     display: flex;
     align-items: center;
   }
@@ -1229,6 +1254,8 @@ img {
   flex-direction: column;
   gap: 1rem;  
   margin: 3rem 0;
+  max-width: 900px;
+  width: 100%;
 }
 
 .contact-section__info {
@@ -1252,8 +1279,7 @@ img {
 @media screen and (min-width: 769px) {
   .contact-section__info-container {
     flex-direction: row;    
-    justify-content: center;
-    width: 80%;
+    justify-content: center;    
     margin-right: auto;
     margin-left: auto;
   }
@@ -1265,6 +1291,8 @@ img {
 
 .contact-section__form {
   margin-bottom: 3rem;
+  max-width: 900px;  
+  margin: 0 auto;
 }
 
 .contact-section__input-container { 

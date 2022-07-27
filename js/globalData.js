@@ -1,6 +1,15 @@
 
 export const globalProjects = [
-
+  {      
+    image: "./img/netflix-clone.jpeg",
+    alt: "netflix-clone",
+    url: "https://netflix-clone-e4c54.web.app/",
+    github: "https://github.com/Kunjolee/netflix-clone",
+    category: "webApp",
+    categoryText: "Web App",
+    title: "Netflix Clone",
+    text: "Development and deploy of the entire application. With the latest Netflix series, authentication, routes, information, scores, trailers and so much more."
+  },  
   {      
     image: "./img/MusicStore.jpg",
     alt: "music-store",
@@ -9,7 +18,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "Music Store",
-    text: "e-commerce application for instruments. React.js, Stripe.js, Redux, and CSS"
+    text: "A dinamic functional e-commerce of music that includes, products, queries, filters, routes, shopping cart, checkout and payments."
   },  
   {    
     image: "./img/sharemeApp.jpg",
@@ -19,7 +28,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "ShareMe",
-    text: "Web social media application. React.js, Tailwind CSS and Sanity studio"
+    text: "Social media application. Includes a CRUD of posts, download a post, comments, searching, user google authentication, dinamic routing and categories."
   },
   {    
     image: "./img/pokemonStatic.jpg",
@@ -29,7 +38,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "Pokemon App",
-    text: "Pokemon App. Typescript, Next.js and NextUI"
+    text: "Pre-render application of pokemon. Using next.js features such as SSG, ISR y DR. It pre-renders 151 pokemon that you can add to favorites."
   },
   {    
     image: "./img/crudLogin.jpeg",
@@ -39,7 +48,7 @@ export const globalProjects = [
     category: "mern",
     categoryText: "MERN",
     title: "Login Crud Auth",
-    text: "Full stack application to make a Login & CRUD"
+    text: "Mern Stack Application. Using my own backend, implementing a restful API, JWT authentication, custom validations in the backend and frontend, middlewares, POO."
   },
   {    
     image: "./img/gpt3Page.jpeg",
@@ -49,7 +58,7 @@ export const globalProjects = [
     category: "ui_ux",
     categoryText: "UI/UX",
     title: "GPT3 WEB",
-    text: "Modern responsive design. React.js, CSS and BEM methodology"
+    text: "Modern responsive design of GPT3 IA technology. Inspired by a figma design."
   },
   {    
     image: "./img/movieCard.jpg",
@@ -59,95 +68,119 @@ export const globalProjects = [
     category: "ui_ux",
     categoryText: "UI/UX",
     title: "Movie Card",
-    text: "Responsive modern layout about movies. HTML & CSS"
+    text: "Responsive modern static layout about some of my favorites movies."
   },
 ]
 
 export const globalSkills = [
   {
-    id: 1, 
-    skillColor: "skills-section__image--orange",
-    image: "./img/html.png",
-    alt: "html-skill",
-    text: "HTML5"
-  },
-  {
-    id: 2, 
-    skillColor: "skills-section__image--blue",
-    image: "./img/css.png",
-    alt: "css-skill",
-    text: "CSS3"
-  },
-  {
-    id: 3, 
-    skillColor: "skills-section__image--yellow",
-    image: "./img/javascript.png",
-    alt: "js-skill",
-    text: "Javascript"
-  },
-  {
-    id: 4, 
-    skillColor: "skills-section__image--light-blue",
-    image: "./img/tailwind.png",
-    alt: "tailwind-skill",
-    text: "Tailwind CSS"
-  },
-  {
-    id: 5, 
     skillColor: "skills-section__image--light-blue",
     image: "./img/react.png",
     alt: "react-skill",
-    text: "React JS"
+    text: "React.js"
   },
   {
-    id: 6, 
-    skillColor: "skills-section__image--purple",
-    image: "./img/redux.png",
-    alt: "redux-skill",
-    text: "Redux JS"
-  },  
-  {
-    id: 7, 
-    skillColor: "",
-    image: "./img/Next.png",
-    alt: "next-skill",
-    text: "Next JS"
-  },
-  {
-    id: 8, 
-    skillColor: "skills-section__image--light-green",
-    image: "./img/node.png",
-    alt: "node-skill",
-    text: "Node JS"
-  },
-  {
-    id: 9, 
     skillColor: "skills-section__image--blue",
     image: "./img/typescript.png",
     alt: "ts-skill",
     text: "Typescript"
   },
   {
-    id: 10, 
-    skillColor: "skills-section__image--orange",
-    image: "./img/git.png",
-    alt: "git-skill",
-    text: "Git"
+    skillColor: "skills-section__image--purple",
+    image: "./img/redux.png",
+    alt: "redux-skill",
+    text: "Redux"
+  },  
+  {
+    skillColor: "skills-section__image--white",
+    image: "./img/Next.png",
+    alt: "next-skill",
+    text: "Next.js"
   },
   {
-    id: 11, 
+    skillColor: "skills-section__image--light-green",
+    image: "./img/node.png",
+    alt: "node-skill",
+    text: "Node.js"
+  },
+  {
+    skillColor: "skills-section__image--yellow",
+    image: "./img/javascript.png",
+    alt: "js-skill",
+    text: "JavasCript"
+  },
+  {
+    skillColor: "skills-section__image--orange",
+    image: "./img/html.png",
+    alt: "html-skill",
+    text: "HTML5"
+  },
+  {
+    skillColor: "skills-section__image--blue",
+    image: "./img/css.png",
+    alt: "css-skill",
+    text: "CSS3"
+  },
+  {
+    skillColor: "skills-section__image--light-blue",
+    image: "./img/tailwind.png",
+    alt: "tailwind-skill",
+    text: "Tailwind CSS"
+  },
+  {
+    skillColor: "skills-section__image--blue",
+    image: "./img/materialUI.png",
+    alt: "materialUI-skill",
+    text: "Material UI"
+  },
+  {
     skillColor: "skills-section__image--light-green",
     image: "./img/mongodb.svg",
     alt: "mongo-skill",
     text: "MongoDB"
   },  
   {
-    id: 12, 
     skillColor: "skills-section__image--light-blue",
     image: "./img/MySQL.png",
     alt: "mysql-skill",
     text: "MySQL"
   },  
+  {
+    skillColor: "skills-section__image--orange",
+    image: "./img/git.png",
+    alt: "git-skill",
+    text: "Git"
+  },
 ]
 
+export const projectsTechnologies = [
+  {
+    altRef: "netflix-clone",
+    technologies: ["React.js", "Redux", "Typescript", "React Router v6", "Firebase 9", "TMDB API", "CSS"]
+  },
+  {
+    altRef: "music-store",
+    technologies: ["React.js", "Redux", "Stripe.js", "React Router v6", "commerce.js library", "CSS"]
+  },
+  {
+    altRef: "shareme-app",
+    technologies: ["React.js", "react-oauth/google", "Sanity Studio", "React Router v6", "Tailwind CSS"]
+  },
+  {
+    altRef: "pokemon-static",
+    technologies: ["Next.js", "Typescript", "NextUI", "LocalStorage"]
+  },
+  {
+    altRef: "crud-login-auth",
+    technologies: ["Node.js", "Express", "MongoDB", "JWT", "React.js", "CSS"]
+  },
+  {
+    altRef: "gpt3-app",
+    technologies: ["React.js", "CSS"]
+  },
+  {
+    altRef: "movie-card",
+    technologies: ["HTML", "CSS", "JavasCript"]
+  },
+]
 export const myEmail = "06791608304bb160407163e6281c7079"

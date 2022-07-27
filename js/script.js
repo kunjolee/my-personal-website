@@ -1,4 +1,4 @@
-import { globalProjects, globalSkills, myEmail } from "./globalData.min.js"
+import { globalProjects, globalSkills, myEmail, projectsTechnologies } from "./globalData.min.js"
 
 const doc = document;
 const sections = doc.querySelectorAll("[data-scroll-spy]");
@@ -58,15 +58,17 @@ const getAllCategories = (projects = []) => {
           </div>
           <div class="projects-section__information">
             <h3>${project.title}</h3>
-            <p>${project.text}</p>
+            <p>${project.text}</p>            
+            <div class="projects-section__technologies">
+            </div>
           </div>
         </div>
       </article>
     `
-  })    
-  projectsArticle.innerHTML = projectData.join("");
+  });
+  
+  projectsArticle.innerHTML = projectData.join("");        
 }
-
 
 const getCategories = (projects = [], id = "") => {  
 
@@ -95,6 +97,8 @@ const getCategories = (projects = [], id = "") => {
           <div class="projects-section__information">
             <h3>${project.title}</h3>
             <p>${project.text}</p>
+            <div class="projects-section__technologies">
+            </div>
           </div>
         </div>
       </article>
@@ -121,9 +125,29 @@ const getSkills = (skills = []) => {
   
 }
 
+const getTechnologies = () => {
+  const projectsArticles = doc.querySelectorAll(".projects-section__article");      
+
+  projectsArticles.forEach(project_article => {
+    const imgAlt = project_article.querySelector(".projects-section__image-item").alt;
+    const tech = projectsTechnologies.find( el => el.altRef === imgAlt);
+
+    if (imgAlt === tech.altRef) {
+
+      const technologiesParagraph = tech.technologies.map(tech => ( 
+          `<li>${tech}</li>` 
+        ))
+
+      const sectionTechnologies = project_article.querySelector(".projects-section__technologies");
+      sectionTechnologies.innerHTML= technologiesParagraph.join("");
+    }    
+  })
+}
+
 doc.addEventListener("DOMContentLoaded" , () => {
   getAllCategories(globalProjects);
-  getSkills(globalSkills);  
+  getSkills(globalSkills); 
+  getTechnologies(); 
 })
 
 doc.addEventListener("click" , (e) => {
@@ -133,9 +157,11 @@ doc.addEventListener("click" , (e) => {
     if(id === "all"){
       getAllCategories(globalProjects);
       projectsSection.classList.remove("projects-section--category");
+      getTechnologies();
     } else {
       getCategories(globalProjects, id);    
       projectsSection.classList.add("projects-section--category");
+      getTechnologies();
     }
 
   }
