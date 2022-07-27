@@ -8,7 +8,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "Netflix Clone",
-    text: "Development and deploy of the entire application. With the latest Netflix series, authentication, routes, information, scores, trailers and so much more."
+    text: "Development and deployment of the entire application. With the latest Netflix series, authentication, routes, information, scores, trailers, and so much more."
   },  
   {      
     image: "./img/MusicStore.jpg",
@@ -18,7 +18,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "Music Store",
-    text: "A dinamic functional e-commerce of music that includes, products, queries, filters, routes, shopping cart, checkout and payments."
+    text: "Dynamic and functional e-commerce for music that includes products, queries, filters, routes, shopping cart, checkout, and payments."
   },  
   {    
     image: "./img/sharemeApp.jpg",
@@ -28,7 +28,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "ShareMe",
-    text: "Social media application. Includes a CRUD of posts, download a post, comments, searching, user google authentication, dinamic routing and categories."
+    text: "Social media application. Includes a CRUD of posts, downloading a post, comments, searching, user Google authentication, dynamic routing, and categories."
   },
   {    
     image: "./img/pokemonStatic.jpg",
@@ -38,7 +38,7 @@ export const globalProjects = [
     category: "webApp",
     categoryText: "Web App",
     title: "Pokemon App",
-    text: "Pre-render application of pokemon. Using next.js features such as SSG, ISR y DR. It pre-renders 151 pokemon that you can add to favorites."
+    text: "Pre-render application of Pokemon. Using next.js features such as SSG, ISR, and DR. It pre-renders 151 Pokémon that you can add to favorites section."
   },
   {    
     image: "./img/crudLogin.jpeg",
@@ -48,7 +48,7 @@ export const globalProjects = [
     category: "mern",
     categoryText: "MERN",
     title: "Login Crud Auth",
-    text: "Mern Stack Application. Using my own backend, implementing a restful API, JWT authentication, custom validations in the backend and frontend, middlewares, POO."
+    text: "MERN Stack Application. Using my own backend, implementing a restful API, JWT authentication, custom validations in the backend and frontend, middlewares, and POO."
   },
   {    
     image: "./img/gpt3Page.jpeg",
@@ -58,7 +58,7 @@ export const globalProjects = [
     category: "ui_ux",
     categoryText: "UI/UX",
     title: "GPT3 WEB",
-    text: "Modern responsive design of GPT3 IA technology. Inspired by a figma design."
+    text: "Modern responsive design of GPT3 IA technology. Inspired by a Figma design."
   },
   {    
     image: "./img/movieCard.jpg",
@@ -68,7 +68,7 @@ export const globalProjects = [
     category: "ui_ux",
     categoryText: "UI/UX",
     title: "Movie Card",
-    text: "Responsive modern static layout about some of my favorites movies."
+    text: "A responsive modern static layout about some of my favorite movies."
   },
 ]
 
