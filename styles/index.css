@@ -990,7 +990,7 @@ img {
 
 .projects-section__details p {
   color: var(--black-color);
-  text-align: left;
+  text-align: justify;
 }
 
 .projects-section__technologies {
