@@ -1,15 +1,15 @@
 
 export const globalProjects = [
-  {      
-    image: "./img/netflix-clone.jpeg",
-    alt: "netflix-clone",
-    url: "https://netflix-clone-e4c54.firebaseapp.com/",
-    github: "https://github.com/Kunjolee/netflix-clone",
-    category: "webApp",
-    categoryText: "Web App",
-    title: "Netflix Clone",
-    text: "With the latest Netflix series, authentication, routes, information, scores, trailers, and so much more."
-  },  
+  // {      
+  //   image: "./img/netflix-clone.jpeg",
+  //   alt: "netflix-clone",
+  //   url: "https://netflix-clone-e4c54.firebaseapp.com/",
+  //   github: "https://github.com/Kunjolee/netflix-clone",
+  //   category: "webApp",
+  //   categoryText: "Web App",
+  //   title: "Netflix Clone",
+  //   text: "With the latest Netflix series, authentication, routes, information, scores, trailers, and so much more."
+  // },  
   {      
     image: "./img/MusicStore.jpg",
     alt: "music-store",
